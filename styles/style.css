@@ -21,10 +21,6 @@ body {
   color: var(--font-color);
 }
 
-h1 {
-  color: var(--secondary-color);
-}
-
 a {
   color: var(--primary-color);
 }
@@ -39,7 +35,11 @@ nav{
     position: sticky;
 }
 
-ul {
+article{
+    padding-top: 3rem;
+}
+
+#navigation {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -47,11 +47,11 @@ ul {
   background-color: var(--heading-color);
 }
 
-li {
+#li-nav {
   float: left;
 }
 
-li a {
+#li-nav a {
   display: block;
   color: white;
   text-align: center;
@@ -75,6 +75,16 @@ em {
   margin-left: 10px;
   font-size: 1rem;
   color: #fff;
+}
+
+#logo{
+    width: 75px;
+    height: 100px;
+    padding-left: 20px;
+}
+
+#top-logo{
+    display: inline-flex;
 }
 
 .theme-switch {
@@ -131,4 +141,14 @@ h3 {
   text-align: justify;
   padding-right: 1rem;
   padding-left: 1rem;
+}
+
+footer{
+    background-color: var(--secondary-color);
+}
+
+#contact, #footer-made-with{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
